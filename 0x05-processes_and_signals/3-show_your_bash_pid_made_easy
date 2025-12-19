@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Displays the PID and process name of all bash processes using ps
+# Displays PID and process name of all bash processes
 
-ps -C bash -o pid=,comm= | awk '{printf "%5d %s\n", $1, $2}'
+pgrep -a bash | awk '{printf "%-6s %s\n", $1, $2}'
