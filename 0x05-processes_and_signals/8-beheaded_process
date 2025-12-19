@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Kills the 7-highlander process using SIGKILL
+# Kills the 7-highlander process using SIGKILL (signal 9)
 
-pid=$(pgrep -f 7-highlander)
-[ -n "$pid" ] && kill -9 "$pid"
+pkill -9 -f 7-highlander
