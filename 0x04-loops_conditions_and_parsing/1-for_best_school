@@ -1,4 +1,6 @@
-chmod +x 1-for_best_school
-git add 1-for_best_school
-git commit -m "Fix for loop script"
-git push
+#!/usr/bin/env bash
+# Print Best School 10 times
+for ((i=0; i<10; i++))
+do
+echo "Best School"
+done
