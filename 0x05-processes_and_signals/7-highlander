@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# Infinite loop printing "To infinity and beyond"; prints "I am invincible!!!" on SIGTERM
+# Infinite loop that handles SIGTERM by printing "I am invincible!!!"
 
 trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
-    echo "To infinity and beyond"
     sleep 2
 done
