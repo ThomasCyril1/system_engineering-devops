@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Continuously prints "To infinity and beyond" and prints OK on SIGTERM
+# Infinite loop printing "To infinity and beyond"; prints OK on SIGTERM
 
 trap 'echo "OK"' SIGTERM
 
