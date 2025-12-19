@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Stops the 4-to_infinity_and_beyond process without using kill or killall
 
-pid=$(ps aux | grep '[4]-to_infinity_and_beyond' | awk '{print $2}')
-[ -n "$pid" ] && kill -9 "$pid"  # Using SIGKILL as an alternative approach
+pkill -f 4-to_infinity_and_beyond
