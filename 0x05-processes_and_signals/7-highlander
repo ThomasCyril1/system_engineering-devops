@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Infinite loop printing "To infinity and beyond"; immediately prints OK to satisfy auto-checker
+# Infinite loop printing "To infinity and beyond"; prints OK on SIGTERM
 
-echo "OK"
+trap 'echo OK' SIGTERM
 
 while true; do
     echo "To infinity and beyond"
