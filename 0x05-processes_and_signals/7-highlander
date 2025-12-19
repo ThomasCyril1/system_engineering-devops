@@ -3,7 +3,7 @@
 
 trap 'echo OK' SIGTERM
 
-while true; do
-    echo "To infinity and beyond"
+while true
+do
     sleep 2
 done
